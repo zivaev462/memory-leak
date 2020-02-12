@@ -8,22 +8,22 @@
 
 /* Begin PBXBuildFile section */
 		1C1FD71723F4386A002D86A3 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1C1FD71623F4386A002D86A3 /* AppDelegate.swift */; };
-		1C1FD71923F4386A002D86A3 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1C1FD71823F4386A002D86A3 /* SceneDelegate.swift */; };
-		1C1FD71B23F4386A002D86A3 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1C1FD71A23F4386A002D86A3 /* ViewController.swift */; };
-		1C1FD71E23F4386A002D86A3 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1C1FD71C23F4386A002D86A3 /* Main.storyboard */; };
+		1C1FD71B23F4386A002D86A3 /* FirstViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1C1FD71A23F4386A002D86A3 /* FirstViewController.swift */; };
 		1C1FD72023F4386C002D86A3 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1C1FD71F23F4386C002D86A3 /* Assets.xcassets */; };
 		1C1FD72323F4386C002D86A3 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1C1FD72123F4386C002D86A3 /* LaunchScreen.storyboard */; };
+		1C1FD72C23F438EC002D86A3 /* ViewComponent.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1C1FD72B23F438EC002D86A3 /* ViewComponent.swift */; };
+		1C1FD73023F43902002D86A3 /* LeakingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1C1FD72F23F43902002D86A3 /* LeakingViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		1C1FD71323F4386A002D86A3 /* MemoryLeak.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MemoryLeak.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		1C1FD71623F4386A002D86A3 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		1C1FD71823F4386A002D86A3 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		1C1FD71A23F4386A002D86A3 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
-		1C1FD71D23F4386A002D86A3 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		1C1FD71A23F4386A002D86A3 /* FirstViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FirstViewController.swift; sourceTree = "<group>"; };
 		1C1FD71F23F4386C002D86A3 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		1C1FD72223F4386C002D86A3 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		1C1FD72423F4386C002D86A3 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		1C1FD72B23F438EC002D86A3 /* ViewComponent.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewComponent.swift; sourceTree = "<group>"; };
+		1C1FD72F23F43902002D86A3 /* LeakingViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LeakingViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -57,14 +57,22 @@
 			isa = PBXGroup;
 			children = (
 				1C1FD71623F4386A002D86A3 /* AppDelegate.swift */,
-				1C1FD71823F4386A002D86A3 /* SceneDelegate.swift */,
-				1C1FD71A23F4386A002D86A3 /* ViewController.swift */,
-				1C1FD71C23F4386A002D86A3 /* Main.storyboard */,
+				1C1FD71A23F4386A002D86A3 /* FirstViewController.swift */,
+				1C1FD72F23F43902002D86A3 /* LeakingViewController.swift */,
+				1C1FD72B23F438EC002D86A3 /* ViewComponent.swift */,
+				1C1FD72A23F43872002D86A3 /* Supporting Files */,
+			);
+			path = MemoryLeak;
+			sourceTree = "<group>";
+		};
+		1C1FD72A23F43872002D86A3 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
 				1C1FD71F23F4386C002D86A3 /* Assets.xcassets */,
 				1C1FD72123F4386C002D86A3 /* LaunchScreen.storyboard */,
 				1C1FD72423F4386C002D86A3 /* Info.plist */,
 			);
-			path = MemoryLeak;
+			path = "Supporting Files";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -127,7 +135,6 @@
 			files = (
 				1C1FD72323F4386C002D86A3 /* LaunchScreen.storyboard in Resources */,
 				1C1FD72023F4386C002D86A3 /* Assets.xcassets in Resources */,
-				1C1FD71E23F4386A002D86A3 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -138,23 +145,16 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				1C1FD71B23F4386A002D86A3 /* ViewController.swift in Sources */,
+				1C1FD73023F43902002D86A3 /* LeakingViewController.swift in Sources */,
+				1C1FD71B23F4386A002D86A3 /* FirstViewController.swift in Sources */,
+				1C1FD72C23F438EC002D86A3 /* ViewComponent.swift in Sources */,
 				1C1FD71723F4386A002D86A3 /* AppDelegate.swift in Sources */,
-				1C1FD71923F4386A002D86A3 /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXVariantGroup section */
-		1C1FD71C23F4386A002D86A3 /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				1C1FD71D23F4386A002D86A3 /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
 		1C1FD72123F4386C002D86A3 /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
@@ -286,7 +286,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = MJWVGRX9VD;
-				INFOPLIST_FILE = MemoryLeak/Info.plist;
+				INFOPLIST_FILE = "MemoryLeak/Supporting Files/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -304,7 +304,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = MJWVGRX9VD;
-				INFOPLIST_FILE = MemoryLeak/Info.plist;
+				INFOPLIST_FILE = "MemoryLeak/Supporting Files/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
